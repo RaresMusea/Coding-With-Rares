@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Staatliches", cursive;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5em;
+  background-image: url("../img/Coding.jpg");
+  background-size: cover;
+  color: white;
+  .Label {
+    justify-content: center;
+    align-content: center;
+    font-size: 2rem;
+    font-family: "Source Code Pro", monospace;
+    font-weight: bold;
+    padding-bottom: 1em;
+    transition: transform 0.2s;
+  }
+
+  @media screen and(max-width:330px) {
+    .Label {
+      font-size: 1em;
+    }
+  }
+
+  .Label:hover {
+    transform: scale(1.2);
+  }
+
+  .Navbar_list {
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      li {
+        list-style-type: none;
+        text-align: center;
+        a {
+          text-decoration: none;
+          color: white;
+          text-align: center;
+          transition: ease-in 0.2s;
+          border-radius: 15px;
+        }
+
+        a:hover {
+          background-color: red;
+        }
+      }
+    }
+  }
+
+  @media screen and(max-width:330px) {
+    .Navbar_list {
+      font-size: 0.9em;
+    }
+  }
+}
+
+.content {
+  padding-top: 2.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .latest {
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 1.5rem;
+    transition: transform 0.8s;
+  }
+  .latest:hover {
+    transform: rotate(360deg) scale(0.5);
+    text-decoration: underline;
+    padding-bottom: 2em;
+  }
+  .card {
+    background-color: #f1f1f1;
+    border: 0.1px solid #dadce0;
+    box-shadow: 0.1px 0.1px lightgrey;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 2em;
+    transition: 0.3s ease-in;
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 1em;
+    }
+
+    h2 {
+      font-family: "Red Hat Display", sans-serif;
+      text-align: center;
+      font-size: 1em;
+      text-indent: 1em;
+    }
+  }
+
+  .card:hover {
+    box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+  }
+
+  .card-footer {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    margin-top: 3.3em;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 0.2px solid rgba(152, 149, 149, 0.2);
+  }
+
+  .flex-left {
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: row;
+  }
+  .clock {
+    color: gray;
+    padding: 0.5em;
+  }
+
+  .left-text {
+    font-size: 0.8em;
+    font-family: "Ubuntu Condensed", sans-serif;
+    color: grey;
+    font-weight: 600;
+    margin: 0.5em;
+  }
+
+  .flex-right {
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    align-content: center;
+    font-family: "Ubuntu Condensed";
+    color: grey;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin: 0.5em;
+  }
+
+  .card-footer2 {
+    background-color: lightgrey;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 30px;
+    margin-top: 4em;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: 0.2px solid rgba(152, 149, 149, 0.2);
+  }
+}
+
+.foot {
+  width: 100%;
+  height: 300px;
+  margin-top: 3em;
+  background-color: #dadce0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+  .credits {
+    font-family: "Source Code Pro", monospace;
+    font-size: 1em;
+    text-align: center;
+    color: grey;
+  }
+
+  .news {
+    font-family: "Source Code Pro", monospace;
+    font-size: 1em;
+    text-align: center;
+    color: grey;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
+    align-content: center;
+
+    #e-mail {
+      margin: 1em;
+      height: 25px;
+      border-radius: 20px;
+      border: 0.6px solid #dadce0;
+      font-size: 1em;
+      padding-left: 1em;
+      padding-right: 1em;
+      text-align: center;
+    }
+    #e-mail:focus {
+      outline: lavenderblush;
+    }
+
+    #e-mail::selection {
+      color: grey;
+    }
+
+    button {
+      font-family: "Source Code Pro", monospace;
+      font-weight: bolder;
+      color: grey;
+      transition: ease-in 0.3s;
+      border-radius: 25px;
+      border: 0.6px solid #dadce0;
+    }
+
+    button:hover {
+      background-color: green;
+      color: white;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .navbar {
+    .Navbar_list {
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: center;
+        align-content: space-around;
+        li {
+          padding: 2em;
+          padding-bottom: 0.2em;
+        }
+      }
+    }
+  }
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .latest {
+      display: none;
+    }
+    .card {
+      margin: 2em;
+    }
+  }
+
+  .foot {
+    height: 200px;
+    display: grid;
+  }
+}

@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "Staatliches", cursive;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.5em;
+  background-image: url("../img/Coding.jpg");
+  background-size: cover;
+  color: white;
+}
+
+.navbar .Label {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-size: 2rem;
+  font-family: "Source Code Pro", monospace;
+  font-weight: bold;
+  padding-bottom: 1em;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+@media screen and (max-width: 330px) {
+  .navbar .Label {
+    font-size: 1em;
+  }
+}
+
+.navbar .Label:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.navbar .Navbar_list ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.navbar .Navbar_list ul li {
+  list-style-type: none;
+  text-align: center;
+}
+
+.navbar .Navbar_list ul li a {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  -webkit-transition: ease-in 0.2s;
+  transition: ease-in 0.2s;
+  border-radius: 15px;
+}
+
+.navbar .Navbar_list ul li a:hover {
+  background-color: red;
+}
+
+@media screen and (max-width: 330px) {
+  .navbar .Navbar_list {
+    font-size: 0.9em;
+  }
+}
+
+.content {
+  padding-top: 2.5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.content .latest {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 1.5rem;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+}
+
+.content .latest:hover {
+  -webkit-transform: rotate(360deg) scale(0.5);
+          transform: rotate(360deg) scale(0.5);
+  text-decoration: underline;
+  padding-bottom: 2em;
+}
+
+.content .card {
+  background-color: #f1f1f1;
+  border: 0.1px solid #dadce0;
+  -webkit-box-shadow: 0.1px 0.1px lightgrey;
+          box-shadow: 0.1px 0.1px lightgrey;
+  border-radius: 10px;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 2em;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+.content .card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1em;
+}
+
+.content .card h2 {
+  font-family: "Red Hat Display", sans-serif;
+  text-align: center;
+  font-size: 1em;
+  text-indent: 1em;
+}
+
+.content .card:hover {
+  -webkit-box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+          box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+}
+
+.content .card-footer {
+  background-color: lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 30px;
+  margin-top: 3.3em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: 0.2px solid rgba(152, 149, 149, 0.2);
+}
+
+.content .flex-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.content .clock {
+  color: gray;
+  padding: 0.5em;
+}
+
+.content .left-text {
+  font-size: 0.8em;
+  font-family: "Ubuntu Condensed", sans-serif;
+  color: grey;
+  font-weight: 600;
+  margin: 0.5em;
+}
+
+.content .flex-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  font-family: "Ubuntu Condensed";
+  color: grey;
+  font-size: 0.8em;
+  font-weight: 600;
+  margin: 0.5em;
+}
+
+.content .card-footer2 {
+  background-color: lightgrey;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 30px;
+  margin-top: 4em;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top: 0.2px solid rgba(152, 149, 149, 0.2);
+}
+
+.foot {
+  width: 100%;
+  height: 300px;
+  margin-top: 3em;
+  background-color: #dadce0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.foot .credits {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1em;
+  text-align: center;
+  color: grey;
+}
+
+.foot .news {
+  font-family: "Source Code Pro", monospace;
+  font-size: 1em;
+  text-align: center;
+  color: grey;
+}
+
+.foot form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.foot form #e-mail {
+  margin: 1em;
+  height: 25px;
+  border-radius: 20px;
+  border: 0.6px solid #dadce0;
+  font-size: 1em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-align: center;
+}
+
+.foot form #e-mail:focus {
+  outline: lavenderblush;
+}
+
+.foot form #e-mail::-moz-selection {
+  color: grey;
+}
+
+.foot form #e-mail::selection {
+  color: grey;
+}
+
+.foot form button {
+  font-family: "Source Code Pro", monospace;
+  font-weight: bolder;
+  color: grey;
+  -webkit-transition: ease-in 0.3s;
+  transition: ease-in 0.3s;
+  border-radius: 25px;
+  border: 0.6px solid #dadce0;
+}
+
+.foot form button:hover {
+  background-color: green;
+  color: white;
+}
+
+@media (min-width: 800px) {
+  .navbar .Navbar_list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
+  }
+  .navbar .Navbar_list ul li {
+    padding: 2em;
+    padding-bottom: 0.2em;
+  }
+  .content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .content .latest {
+    display: none;
+  }
+  .content .card {
+    margin: 2em;
+  }
+  .foot {
+    height: 200px;
+    display: -ms-grid;
+    display: grid;
+  }
+}
+/*# sourceMappingURL=style.css.map */
